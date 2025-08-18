@@ -1,8 +1,30 @@
+.navbar {
+  background-color: #d40b87;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.logo {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+
+.nav-links a {
+  color: #d32cc5;
+  text-decoration: none;
+}
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(148, 18, 137, 0.5);
     border-radius: 50%;
 }
 

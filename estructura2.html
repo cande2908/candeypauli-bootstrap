@@ -5,40 +5,53 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
     <style>
-        .carrousel-item img {
+        .carousel-container {
             width: 80%;
-            margin:2rem auto;
+            margin: 2rem auto;
+        }
+        .carousel-item img {
+            width: 100%;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
+    <nav class="navbar">
+    <div class="logo">Cookie Lover</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="estructura2.html">Galletas</a></li>
+    </ul>
+  </nav>
     
-    <header><H1>Hermosos paisajes del mundo</H1></header>
-   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img src="img/fofofofof.jpg" class="d-block w-100" alt="Imagen 1" />
+    <header><H1>Modelos de la Galletas</H1></header>
+    <div class="carousel-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/aasghadsgwhgdcved.jpg" class="d-block w-100" alt="Imagen 1" />
+                </div>
+                <div class="carousel-item">
+                    <img src="img/ddsadsfsfgsg.jpg" class="d-block w-100" alt="Imagen 2" />
+                </div>
+                <div class="carousel-item">
+                    <img src="img/vgggvgsydhe.gif" class="d-block w-100" alt="Imagen 3" />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
-        <div class="carousel-item">
-            <img src="img/eaeaaeeae.jpg" class="d-block w-100" alt="Imagen 2" />
-        </div>
-        <div class="carousel-item">
-            <img src="img/cccccc.webp" class="d-block w-100" alt="Imagen 3" />
-        </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
