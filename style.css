@@ -7,7 +7,7 @@ body{
     font-family: sans-serif;
 }
 .navbar {
-  background-color: #e47ed6;
+  background-color: #f06292;
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
@@ -33,7 +33,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #fca6f5;
+    background: #f084a8;
     padding: 15px;
 }
 main{
@@ -60,12 +60,12 @@ main{
 aside{
     flex: 1;
     margin-left: 20px;
-    background:rgb(240, 146, 232);
+    background:#f06292;
     padding: 20px;
 }
 footer{
     text-align: center;
-    background: #ec82de;
+    background: #f06292;
     padding: 15px;
     margin-top: 20px;
 }
