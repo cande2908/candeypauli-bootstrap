@@ -12,7 +12,7 @@
             position: relative;
         }
         .carousel-inner {
-            height: 650px;
+            height: 800px;
             position: relative;
             padding: 0;
         }
@@ -24,8 +24,9 @@
             justify-content: center;
         }
         .carousel-item img {
-            width: 100%;
+            width: auto;
             height: 100%;
+            max-width: 100%;
             object-fit: contain;
             margin: 0 auto;
             display: block;
@@ -34,14 +35,53 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.5rem 2rem;
+            padding: 0.7rem 2.5rem;
+            background: #fff0f6;
+            border-radius: 16px;
+            margin: 2rem auto 1.5rem auto;
+            width: 85%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #880e4f;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 36px;
+            margin-right: 10px;
         }
         .nav-links {
             display: flex;
-            gap: 1rem;
+            gap: 1.2rem;
             list-style: none;
             margin: 0;
             padding: 0;
+        }
+        .nav-links a {
+            color: #880e4f;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 6px 18px;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s;
+        }
+        .nav-links a:hover {
+            background: #f8bbd0;
+            color: #fff;
+        }
+        .header-principal {
+            background: #f8bbd0;
+            border-radius: 16px;
+            margin: 2rem auto 1.5rem auto;
+            width: 80%;
+            text-align: center;
+            color: #880e4f;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            padding: 18px 0 12px 0;
         }
         .carousel-control-prev,
         .carousel-control-next {
@@ -67,18 +107,32 @@
         .carousel-control-next-icon {
             filter: invert(1) drop-shadow(0 0 2px #333);
         }
+        body {
+            /* padding-bottom: 70px; */
+        }
+        footer {
+            /* position: fixed; */
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background: #fff0f6;
+            color: #880e4f;
+            text-align: center;
+            padding: 12px 0 8px 0;
+            font-weight: bold;
+            z-index: 10;
+        }
     </style>
 </head>
 <body>
     <nav class="navbar">
-    <div class="logo"><img src="img/cccookiee-removebg-preview (1).png" alt="Cookie" style="height:32px;vertical-align:middle;margin-right:8px;">Cookie Lover</div>
+    <div class="logo"><img src="img/cccookiee-removebg-preview (1).png" alt="Cookie">Cookie Lover</div>
     <ul class="nav-links">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="estructura2.html">Galletas</a></li>
     </ul>
   </nav>
-    
-    <header><H1>Modelos de la Galletas</H1></header>
+    <header class="header-principal"><h1>Modelos de la Galletas</h1></header>
     <div class="carousel-container">
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -97,6 +151,14 @@
                     <div class="carousel-img-wrapper"><img src="img/vgggvgsydhe.gif" class="d-block w-100" alt="Imagen 3" /></div>
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -116,7 +178,6 @@
       });
     }
     </script>
-
-    <footer>Cande y Pauli</footer>
+    <footer>@Cookiee_loverr</footer>
 </body>
 </html>
